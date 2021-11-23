@@ -1,0 +1,15 @@
+a={1,2,3,4,5}
+b={6,7}
+print(a.union(b))
+print(a.intersection(b))
+print(a-b)
+print(a.difference(b))
+print(a^b)
+#a.discard(4)
+print(a)
+print(a.isdisjoint(b))
+#print(a.pop())
+a.update(b)
+print(a)
+str="Arjun"
+str[3]="B"
