@@ -14,5 +14,5 @@ def bubble(array):
 
 
 
-data=[0,58,36,96,74,13]
+data=[0,10,2,8,59]
 bubble(data)
