@@ -1,37 +1,24 @@
-def get_tuples():
-    tuples = int(input('Enter number of tuples: '))
-    i = 0
-    list_tuples = []
-    while i < tuples:
-        list_item = []
-        count = 0
-        tuple_elem = create_tuple()
-        for item in tuple_elem:
-            try:
-                count += int(item)
-            except:
-                continue
-        tuple_cat = tuple_elem[0]
-        list_item.append(tuple_cat)
-        list_item.append(count)
-        list_tuples.append(tuple(list_item))
-        i += 1
-    return tuple(list_tuples)
+m=int(input('Enter the number of lists: '))
+n=int(input('Enter the lenth of list: '))
 
-def create_tuple():
-    list_len = int(input('Enter number items of tuple: '))
-    i = 0
-    list_elem = []
-    while i < list_len:
-        list_item = input('Enter tuple item: ')
-        list_elem.append(list_item)
-        i += 1
-    tuple_elem = tuple(list_elem)
-    return tuple_elem
+rows, cols = (m,n)
+arr=[]
+for i in range(rows):
+    column = []
+    for j in range(cols):
+        column.append(input('Enter the element to append in the list: '))
+    print('list')
+    arr.append(column)
+print(arr)
 
-def main():                                          # Call main function
-    result = get_tuples()
-    print(result)
+p=int(input('Index of primary key: '))
+pq=input('Primary key query: ')
 
-if __name__ == '__main__':
-    main()
+
+sp1=arr[0]
+sp2=arr[1]
+
+if sp1[p]==str(pq):
+    print(sp1)
+else:
+    print(sp2)
